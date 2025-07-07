@@ -1,0 +1,21 @@
+.header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(169, 195, 218);
+    color: rgb(189, 25, 25);
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.cartButton{
+    padding: 8px 16px;
+    background-color: orange;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
