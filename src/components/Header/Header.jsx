@@ -3,14 +3,12 @@ import style from './header.module.css'
 import { Link } from 'react-router-dom'
 export const Header = () => {
   return (
-   <header className={style.header}>
-    <div className={style.logo}>
-      <Link to='/'> Точка</Link>
-      <Link to='/cart'> Меню</Link>
-      
-       
-    </div>
-    <button className={style.cartButton}>Корзина</button>
-   </header>
+  <header className={style.header}>
+    <Link className={style.logo} to='/'>Pizza <br />Islam & Khamz</Link>
+    <nav>
+      <Link to='/menu' className={style.navLink}>Меню</Link>
+      <Link to='/cart' className={style.navLink}>Корзина</Link>
+    </nav>
+  </header>
   )
 }
