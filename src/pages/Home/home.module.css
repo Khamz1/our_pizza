@@ -31,3 +31,9 @@
 .ctaButton:hover{
     background: #e04a50;
 }
+.cards{
+
+
+    display: flex;
+    justify-content: center;
+}
