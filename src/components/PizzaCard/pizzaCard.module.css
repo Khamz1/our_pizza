@@ -1,0 +1,15 @@
+.pizzaCard{
+    display: flex;
+    justify-content: center;
+
+    
+}
+.pizza{
+    margin: 10px;
+    text-align: center;
+    
+}
+.pizzaImg{
+    width: 450px;
+    height: 450px;
+}
