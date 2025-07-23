@@ -21,7 +21,9 @@ function App() {
     <Route path='/order' element={<Order/>}/>
 
      </Routes>
+     {/* <Footer/> */}
      </BrowserRouter>
+
     </>
         )
 }

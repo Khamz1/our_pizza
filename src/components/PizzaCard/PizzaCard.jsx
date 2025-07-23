@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {pizzas} from "../../data/pizzas.js";
 import Style from './pizzaCard.module.css';
+import { CartContext } from '../../features/CartContext.jsx';
 
 function PizzaCard() {
+    const {addToCart} = useContext(CartContext)
     return (
         <div className={Style.pizzaCard}>
             {pizzas.map((pizza) => (
@@ -11,7 +13,7 @@ function PizzaCard() {
                    <h1> {pizza.name}</h1>
                     <p>{pizza.description}</p>
                     <p>{pizza.price}</p>
-                    <button>Добавть в корзину</button>
+                    <button onClick={()=>addToCart(pizza)}>Добавть в корзину</button>
                 </div>
             ))}
         </div>
