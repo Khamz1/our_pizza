@@ -13,7 +13,7 @@ function PizzaCard() {
                    <h1> {pizza.name}</h1>
                     <p>{pizza.description}</p>
                     <p>{pizza.price}</p>
-                    <button onClick={()=>addToCart(pizza)}>Добавть в корзину</button>
+                    <button onClick={()=>addToCart(pizza)}>Добавить в корзину</button>
                 </div>
             ))}
         </div>

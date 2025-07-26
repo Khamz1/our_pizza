@@ -3,7 +3,9 @@ import React, { createContext, useState } from 'react';
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState([]);
+    // Создаем состояние элементов в корзине
+  const [cartItems, setCartItems] = useState([]); 
+// Функция добавления пиццы в корзину
 
   const addToCart = (pizza) => {
     setCartItems((prev) => {
@@ -20,11 +22,11 @@ export const CartProvider = ({ children }) => {
       }
     });
   };
-
+// Удаление из корзины
   const removeFromCart = (pizzaId) => {
     setCartItems((prev) => prev.filter((item) => item.id !== pizzaId));
   };
-
+// Уменьшение количества товаров в корзине
   const decreaseQuantity = (pizzaId) => {
     setCartItems((prev) =>
       prev.map((item) =>

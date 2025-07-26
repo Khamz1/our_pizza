@@ -1,0 +1,29 @@
+.cart{
+    background-color: rgb(139, 153, 180);
+}
+.cartImg{
+    width: 200x;
+    height: 200px;
+}
+.cartStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartButton{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.cartInfo{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+}
